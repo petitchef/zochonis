@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Zochonis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/logos/small/symbol.png">
+        <script src="js/js.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <div class="header-div">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-menu-img show700" viewBox="0 0 16 16"  onclick="$('#nav-div').collapse('toggle')">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <div class="collapse show" id="nav-div">
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trustees.html">Who We Are</a></li>
+                    <li><a href="#">Purpose</a></li>
+                    <li><a href="#">Areas of Focus</a></li>
+                    <li><a href="#">Overseas Support</a></li>
+                    <li><a href="#">How to Apply</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="main-content-div">
+            <div class="content-text-div">
+                <h1>Trustees</h1>
+            </div>
+            <div class="content-trustees-div">
+                <div class="trustee-card">
+                    <div class="trustee-profile" onclick="showTrusteeInfo('trustee1')">
+                        <img class="trustee-img" src="images/profile.png">
+                        <h1>Paul Milner</h1>
+                    </div>
+                    <div class="trustee-info collapse" id="trustee1">
+                        Paul spent most of his working life with PZ Cussons in a variety of HR roles
+                        both in the UK and overseas.  He retired from the post of Global HR Director
+                        in 2011 and joined ZCT later the same year, becoming the Lead Trustee uppon
+                        the death of Sir John in 2013.  Paul was a governor of Stockport Grammar School
+                        between 2011 and 2021.
+                    </div>
+                </div>
+                <div class="trustee-card">
+                    <div class="trustee-profile" onclick="showTrusteeInfo('trustee2')">
+                        <img class="trustee-img" src="images/profile.png">
+                        <h1>Paul Evans</h1>
+                    </div>
+                    <div class="trustee-info collapse" id="trustee2">
+                        Paul obtained a PhD in Chemical Engineering from Imperial College, London in
+                        1986. He worked in Research & Development within PZ Cussons for over 32 years,
+                        leading development programmes in the U.K., Europe, Asia and Africa. He left
+                        the business in August 2020 with his final position as Research and Innovation
+                        Director and became a Trustee of the Zochonis Trust in July 2021.
+                    </div>
+                </div>
+                <div class="trustee-card">
+                    <div class="trustee-profile" onclick="showTrusteeInfo('trustee3')">
+                        <img class="trustee-img" src="images/profile.png">
+                        <h1>Graham Calder</h1>
+                    </div>
+                    <div class="trustee-info collapse" id="trustee3">
+                        After a successful career at Deloitte's, Graham joined PZ Cussons as Finance
+                        Director in 1995 and was appointed Deputy Chairman in 2006. He became a Trustee
+                        in 1998 and worked alongside Sir John.
+                    </div>
+                </div>
+            </div>
+            <div class="content-text-div">
+                <h1>Staff</h1>
+            </div>
+            <div class="content-trustees-div">
+                <div class="trustee-card">
+                    <div class="trustee-profile" onclick="showTrusteeInfo('trustee4')">
+                        <img class="trustee-img" src="images/profile.png">
+                        <h1>Marie Gallagher - Management Assistant</h1>
+                    </div>
+                    <div class="trustee-info collapse" id="trustee4">
+                        Marie has over 20 years experience with the Trust.  She starting working for Sir
+                        John Zochonis/the Trust in 2000 and worked for PZ Cussons for a number of years
+                        before that.  Marie is the main point of contact for the Trust.
+                    </div>
+                </div>
+            </div>
+            <div class="content-text-div">
+                Two of the Trustees meet weekly to review applications formally. The full board of Trustees
+                have two meetings, with advisors, at the half-year and full-year stages (AGM) The Zochonis
+                Charitable Trust's financial year runs from 6 April to 5 April the following year.
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-div">
+            <div>
+                <h1>Sitemap</h1>
+                <ul class="footer-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trustees.html">Who We Are</a></li>
+                    <li><a href="#">Purpose</a></li>
+                    <li><a href="#">Areas of Focus</a></li>
+                    <li><a href="#">Overseas Support</a></li>
+                    <li><a href="#">How to Apply</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Legal</h1>
+                <ul class="footer-ul">
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Annual Reports</a></li>
+                    <li><a href="#">Website Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Contact Us</h1>
+                <ul class="footer-ul">
+                    <li>PZ Cussons</li>
+                    <li>Manchester Business Park</li>
+                    <li>3500 Aviator Way</li>
+                    <li>Manchester</li>
+                    <li>M22 5TG</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-ul">
+                    <li>Charity details</li>
+                    <li>Charity details</li>
+                    <li>Charity details</li>
+                    <li>Charity details</li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
+<script>
+    noTrustees = 4
+    function showTrusteeInfo(trusteeID) {
+        cardOpen = false;
+        delay = 0
+        for (let i = 1; i <= 4; i++) {
+            id = 'trustee'+i
+            if (document.getElementById(id).classList.contains('show')) {delay = 350}
+            $('#'+id).collapse('hide');
+        }
+        setTimeout(() => {  
+            for (let i = 1; i <= 4; i++) {
+                id = 'trustee'+i
+                if (id == trusteeID && !document.getElementById(trusteeID).classList.contains('show')) {
+                    $('#'+trusteeID).collapse('show');
+                }
+            }
+        }, delay);
+    }
+
+    $(window).on('resize', function() {
+        if (document.getElementById("nav-div")) {
+            if($(window).width() > 700) {
+                $('#nav-div').removeClass('collapse');
+            }else{
+                $('#nav-div').addClass('collapse');
+                $('#nav-div').removeClass('show');
+            }
+        }
+    })
+
+    window.onload = function() {
+        if (document.getElementById("nav-div")) {
+            if($(window).width() > 700) {
+                $('#nav-div').removeClass('collapse');
+            }else{
+                $('#nav-div').addClass('collapse');
+                $('#nav-div').removeClass('show');
+            }
+        }
+    }
+</script>
