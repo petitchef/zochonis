@@ -19,6 +19,8 @@
     /* Natural #AF8969 #FFF6E8 #DFE0DF */
     /* Grey Friends #524439 #B9A89B */
     /* Discreet Palette #AF8969 #FFF7EB #402E32 */
+
+    --scroll-offset: 0;
 }
 
 @font-face {
@@ -29,7 +31,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     font-family: 'Satoshi', helvetica, sans-serif;
     color: var(--grey);
@@ -54,18 +56,18 @@ a:visited {
 
 /* HEADER */
 .header-div {
-    width: 100vw;
+    width: 100%;
     background-color: white;
     min-height: 60px;
     position: fixed;
     z-index: 10;
     top: 0;
-    box-shadow: 0px 1px 5px rgb(0 0 0 / 50%);;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 50%);
 }
 
 .header-logo {
-    width: 10vw;
-    margin: 15px 5vw;
+    width: 10%;
+    margin: 15px 5%;
 }
 
 .nav-menu-img {
@@ -267,18 +269,18 @@ a:visited {
     margin-top: 0 !important;
 }
 
-.content-text-div h1 {
+h1 {
     color: var(--gold);
     text-align: center;
 }
 
-.content-text-div h2 {
+h2 {
     text-align: center;
     margin: 2rem 0;
     font-size: 1.6rem;
 }
 
-.content-text-div p {
+p {
     text-align: justify;
     margin: 2rem 0 0;
 }
@@ -390,6 +392,74 @@ a:visited {
     font-size: 0.9rem;
 }
 
+.scroll-outer-div {
+    width: 92%;
+    margin: 30px 4%;
+    height: calc(100% - 60px);
+    position: relative;
+    overflow: hidden;
+}
+  
+.scroll-inner-div {
+    height: 100%;
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    overflow:hidden; 
+    white-space: nowrap;
+}
+
+.scroll-img {    
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.scroll-gradient-div {
+    background: linear-gradient(90deg, var(--light) 0%, rgba(255,255,255,0) 5%, rgba(255,255,255,0) 95%, var(--light) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.scroll-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 120px;
+    margin-top: 2rem;
+    background-color: var(--light);
+    box-shadow: inset 0px 10px 5px -10px rgb(0 0 0 / 25%), inset 0px -10px 5px -10px rgb(0 0 0 / 25%);
+}
+
+.content-scroll-div {
+    padding-bottom: calc(120px + 4rem);
+}
+
+@keyframes img-scroll {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.charities-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 1.5rem;
+    margin: 2rem 0 4rem;
+}
+
+.charities-container img {
+    height: 70px;
+}
+
 @media all and (max-width: 700px) {
     .main-content-div {
         width: 92% !important;
@@ -477,7 +547,7 @@ a:visited {
 /* FOOTER */
 .footer-div {
     width: 100%;
-    padding: 20px 10vw;
+    padding: 20px 10%;
     background-color: var(--grey);
     color: white;
     box-shadow: 0px 0px 5px rgb(0 0 0 / 50%);
@@ -490,7 +560,7 @@ a:visited {
 }
 
 .footer-div div {
-    min-width: 15vw;
+    min-width: 15%;
     flex-grow: 1;
     padding: 10px 20px;
 }
