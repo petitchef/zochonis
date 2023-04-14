@@ -23,10 +23,10 @@
                 <ul class="nav-ul">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="trustees.html">Who We Are</a></li>
-                    <li><a href="#">Purpose</a></li>
+                    <li><a href="purpose.html">Purpose</a></li>
                     <li><a href="charities.html">Areas of Focus</a></li>
-                    <li><a href="#">Overseas Support</a></li>
-                    <li><a href="#">How to Apply</a></li>
+                    <li><a href="overseas.html">Overseas Support</a></li>
+                    <li><a href="apply.html">How to Apply</a></li>
                 </ul>
             </div>
         </div>
@@ -34,103 +34,36 @@
         <!-- BANNER -->
         <div class="banner-container">
 
-            <!-- OPTION 1 (ORIGINAL - NOT RESPONSIVE)-->
-            <span id="original">
-                <div id="banner-txt-div-container">
-                    <div class="banner-txt-div">
-                        <img src="images/logos/large/wordmark.png" id="banner-wordmark">
-                        <img src="images/logos/large/symbol_white.png" id="banner-symbol">
-                    </div>
+            <div class="banner-content-div">
+                <div class="banner-gradient-div"></div>
+                <div class="banner-title-div">
+                    <img class="banner-logo" src="images/logos/large/symbol_white.png">
+                    <h1 class="banner-main-title">The Zochonis Charitable Trust</h1>
+                    <h2 class="banner-subtitle">Tackling Inequalities and Creating Opportunities</h2>
+                    <button>Find Out More</button><button>Contact Us</button>
                 </div>
-                <div id="banner-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
-                    <h1>Tackling Inequalities and Creating Opportunities<button style="font-size: 1rem;">Contact Us</button></h1>
-                    
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url(images/wheel/img1.jpg)"></div>
-                        <div class="carousel-item" style="background-image: url(images/wheel/img2.jpg)"></div>
-                        <div class="carousel-item" style="background-image: url(images/wheel/img3.jpg)"></div>
-                    </div>
+            </div>
+            <div id="banner-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(images/wheel/img1.jpg)"></div>
                 </div>
-            </span>
-
-            <!-- OPTION 2 (UPDATED VERSION) -->
-            <span id="updated">
-                <div class="banner-content-div">
-                    <div class="banner-gradient-div"></div>
-                    <div class="banner-title-div">
-                        <h1 class="banner-main-title">The Zochonis Charitable Trust</h1>
-                        <h2 class="banner-subtitle">Tackling Inequalities and Creating Opportunities</h2>
-                        <button>Find Out More</button><button>Contact Us</button>
-                    </div>
-                </div>
-                <div id="banner-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url(images/wheel/img1.jpg)"></div>
-                        <div class="carousel-item" style="background-image: url(images/wheel/img2.jpg)"></div>
-                        <div class="carousel-item" style="background-image: url(images/wheel/img3.jpg)"></div>
-                    </div>
-                </div>
-            </span>
-            
-            <!-- OPTION 3 () -->
-            <span id="updated-alt">
-                <div class="banner-content-div">
-                    <div class="banner-title-div-2">
-                        <img src="images/logos/large/wordmark.png" id="banner-wordmark-2">
-                        <img src="images/logos/large/symbol_white.png" id="banner-symbol-2">
-                        <h1 class="banner-main-title-2">Tackling Inequalities and Creating Opportunities</h1>
-                    </div>
-                </div>
-                <div id="banner-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image: url(images/wheel/img1.jpg)"></div>
-                        <div class="carousel-item" style="background-image: url(images/wheel/img2.jpg)"></div>
-                        <div class="carousel-item" style="background-image: url(images/wheel/img3.jpg)"></div>
-                    </div>
-                </div>
-            </span>
+            </div>
         </div>
-
-        
 
         <!-- CONTENT -->
         <div class="main-content-div homepage-content">
             <div class="content-text-div">
-                <p>Banner options:</p>
-                <ul>
-                    <li><b>Original:</b> Looks more balanced between the logo and the subtitle although there is quite a bit
-                        of empty space around the text. More difficult to balance between looking too busy/empty with the amount of
-                        text and some background images. Could be made better by having a plainer graphic that makes space for the
-                        logo and text instead of the scrolling images in the background. The button also fills more vertical space
-                        and stands out fairly well with the text.</li>
-                    <li><b>Option 2:</b> More minimalist and doesn't have the logo's symbol in the banner but is much more readable,
-                        even with busier/moving images behind. There is also a nicer balance between the charity name and subtitle
-                        and could even allow for more text/buttons below. The focus is on the name of the charity over the logo,
-                        although the hands symbol is in the navigation bar at the top as with the others, but the logo could be
-                        incorporated more if preferred.</li>
-                    <li><b>Option 3:</b> Similar to option 2 but focusing much more on the logo, although the subtitle could be moved
-                        just below the banner to emphasise it even more.</li>
-                </ul>
-                <button onclick="changeBanner()">Change Banner</button>
+                <h1>History</h1>
                 <p>
                     The Zochonis Charitable Trust (ZCT) was founded by Sir John Zochonis in 1977 to assist charities operating
                     in the North West of England. It was funded by Sir John donating a considerable number of his own PZ Cussons
-                    shares to the Trust. In its first year, the Trust made just a single donation of £6,750 which was to The
-                    University of Manchester. Since then, as more shares were bequeathed by members of the Zochonis family and
-                    as PZ Cussons dividends have increased, that figure has risen substantially. Currently around thirteen
-                    percent of the company’s dividends go to the Trust.
+                    shares. In its first year, the Trust made just one donation to The University of Manchester. Since then that figure has risen substantially.
                 </p><p>
-                    The focus remains to support charities working in the North West of England, although a portion goes to help
-                    charities operating in West Africa. In the main, the Trust assists young people, particularly in the spheres of
-                    education, health and social provision. ZCT donates to a wide variety of charitable causes which range from
-                    national charities with operations in the North West of England to much smaller, regional organisations which
-                    work to meet local needs and problems. The sizes of donations range from substantial sums to lesser amounts
-                    which are nonetheless very welcome.
+                    Today the focus is mainly on Greater Manchester with an additional portion being given to a small number of UK based charities operating in West Africa.
+                    ZCT makes grants in the following four categories – Children & Youth, Education, Health and Social Equity. Grant recipients range from large national charities,
+                    with a north west presence, to smaller local charities.
                 </p><p>
-                    Over the past forty years a number of people have given their time selflessly to assist with the Trust and
-                    a debt of gratitude is owed to them. Currently, ZCT is run by three Trustees and a Management Assistant,
-                    Marie Gallagher. Between them, the four ZCT team members have nearly half a century’s experience working with
-                    the Trust. Annual operating costs are low, at less than two percent of the amount given to charity.
+                    Currently, the Trust is run by 3 Trustees and a Management Assistant.  The 2 Pauls meet weekly to review applications.  
                 </p>
             </div>
             <div class="content-img-div">
@@ -264,7 +197,7 @@
             <div>
                 <h1>Contact Us</h1>
                 <ul class="footer-ul">
-                    <li>PZ Cussons</li>
+                    <li>The Zochonis Charitable Trust</li>
                     <li>Manchester Business Park</li>
                     <li>3500 Aviator Way</li>
                     <li>Manchester</li>
@@ -283,27 +216,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
-<script>
-    options = ["original", "updated", "updated-alt"]
-    current = 0
-    next = 1
-
-    for (let i = 0; i < options.length; i++) {
-        if (i == current) { document.getElementById(options[i]).style.display = "inline"}
-        else { document.getElementById(options[i]).style.display = "none"}
-    }
-
-
-    function changeBanner() {
-        console.log(`Hiding ${current} - ${options[current]}`)
-        console.log(`Showing ${next} - ${options[next]}`)
-        
-        document.getElementById(options[current]).style.display = "none"
-        document.getElementById(options[next]).style.display = "inline"
-
-        current = next
-        next += 1
-        if (next >= options.length) {next = 0}
- 
-    }
-</script>
